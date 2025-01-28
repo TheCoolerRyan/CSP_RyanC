@@ -1,0 +1,1 @@
+#Ryan Crop, Variables Notes
