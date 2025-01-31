@@ -1,6 +1,6 @@
 # Ryan Crop, Variables Practice Python
 
-name = ("My name is Ryan Crop")
+name = "My name is Ryan Crop"
 print(name)
 small_number = input("Pick a number 1-10")
 print(small_number,"Is a nice choice nice choice")
