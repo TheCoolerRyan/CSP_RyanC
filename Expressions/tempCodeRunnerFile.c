@@ -22,10 +22,3 @@ int main(void){
     //printf("Your percent is %f\n" , percent);
     printf("%d\n", add);
     printf("%d\n", sub);
-    mul = 7*4;
-    printf("%d\n", mul);
-    printf("%.23f\n", div);
-    printf("%d\n", mod);
-    printf("%f\n", ex);
-    return 0;
-}
