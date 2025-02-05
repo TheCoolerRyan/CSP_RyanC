@@ -1,6 +1,7 @@
 //Ryan Crop, Expressions Notes C
 #include <stdio.h>
-#include <math.h> //this lets us do exponents
+#include <math.h> 
+//this lets us do exponents
 // Integers int when we set the variable and %d when we print
 // Floats float when we set the variable and %f when we print
 // strings (Words) char when we set the variable and %s when we print
