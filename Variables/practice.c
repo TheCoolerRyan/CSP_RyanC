@@ -1,3 +1,4 @@
+// Ryan Crop, practice c
 #include <stdio.h>
 char name [] = "Ryan Crop";
 int small_num = 9;

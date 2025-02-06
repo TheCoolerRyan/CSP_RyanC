@@ -1,3 +1,4 @@
+//Ryan Crop, Program.c
 #include <stdio.h>
 
 char name[] = "person";
