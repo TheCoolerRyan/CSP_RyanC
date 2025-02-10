@@ -68,7 +68,5 @@ printf("The percent of money you spend on grocies is" ",%.2f\n",percent_grocies)
 printf("The amount of money you spend on savings is" ",2f\n",savings);
 printf("The amount of money you have to spend is" ",%.2f\n",spending_money);
 printf("The total percent of money you have to spend is" ",%.2f\n",percent_spending_money);
-
-
     return 0;
 }
