@@ -4,9 +4,12 @@
 
 name = input("What is your name?(First name only please.)\n").strip().capitalize()
 print(f"Hello {name} welcome to my programe.")
-num = 5*2+name
-#print(num)
-#print(num*2)
 
 sentence = "the quick brown fox jumps over the lazy dog."
-print(sentence.find("fox"))
+word = sentence.find("fox")
+#print (sentence[4:9])
+#print(len(sentence))
+#name = "Ryan"
+#print(f"Welcome to the program {name}!")
+percent = 89
+print(f"Your grade is {percent:.1f}")
