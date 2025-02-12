@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 char name [20];
-char bedazled1[20] = ("<-=-");
-char bedazled2[20] = ("-=->");
+char bedazled1[20] = "<-=-";
+char bedazled2[20] = "-=->";
 int main(void){
 printf("Hello, what is your name?");
 scanf("%s", name);
