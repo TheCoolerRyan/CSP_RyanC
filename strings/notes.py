@@ -13,3 +13,4 @@ word = sentence.find("fox")
 #print(f"Welcome to the program {name}!")
 percent = 89
 print(f"Your grade is {percent:.1f}")
+# F strings are   print(f"words {variable}!")
