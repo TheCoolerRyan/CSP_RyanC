@@ -3,6 +3,7 @@
         "stdio.h": "c",
         "Expression_practice.C": "cpp",
         "math.h": "c",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "string.h": "c"
     }
 }
