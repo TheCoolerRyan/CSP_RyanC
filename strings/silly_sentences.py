@@ -8,4 +8,3 @@ adjective = input("Now could you tell me the first adjevtive that pops into your
 person = input("Finally, tell me the first name of someone you know. (Only the first name please.)")
 print("Your new and hilarious sentence is... ")
 print(f"You where {verb} in a {place} until you ran into a {adjective} version of {person} who was {verb1} in the same {place}.")
-#Finish the print statement right before this .
