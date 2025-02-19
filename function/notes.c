@@ -1,13 +1,13 @@
 //Ryan Crop, Function Notes in c
 #include <stdio.h>
 
-void add(int numOne,int numTwo){
-    printf("%d\n", numOne+numTwo);
-}
-char input(char type[20]){
+//void add(int numOne,int numTwo){
+    //printf("%d\n", numOne+numTwo);
+//}
+void input(char type[50], int length){
     char answer[50];
     printf("Please give me a %s\n", type);
-    scanf("%s", answer);
+    getStr(answer, sizeof(answer)-1);
     return answer;
 }
 
@@ -19,9 +19,7 @@ int main(void){
 //add(1000,2);
 //add(47,9);
 //add(82,-9);
-input("name");
-input("verb");
-input("place");
-printf("%s was %s until they somehow reached %s",input("name"), input("verb"), input("place"));
+char name = word("name");
+printf("%s was %s until they somehow reached %s", word("name", 50), word("verb", 50), word("place", 50));
     return 0;
 }
