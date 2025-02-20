@@ -1,13 +1,19 @@
 //Ryan Crop, update hello world program C
 #include <stdio.h>
-void input(char type[50], int length){
-    char name[50];
-    printf("please give me a %s\n", type);
-    getStr(name, sizeof(name)-1);
-     return name;
-}
 int main(void){
 printf("Hello World");
-char name = word(name);
+
     return 0;
+}
+char name1[50] = "James";
+char name2[50] = "Rachel";
+char name3[50] = "Justin";
+char name4[50] = "Caden";
+char name5[50] = "Reese";
+void input(char type[50], int length){
+printf("Hello %s\n", name1);
+printf("Hello %s\n", name2);
+printf("Hello %s\n", name3);
+printf("Hello %s\n", name4);
+printf("Hello %s\n", name5);
 }
