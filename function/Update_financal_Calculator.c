@@ -1,19 +1,21 @@
 //Ryan Crop, Update Financal Calculator
 #include <stdio.h>
 
-//Write a print statement telling the user what the program is (Bugdet calc) - 
+//Write a print statement telling the user what the program is (Bugdet calc) - Done
 
-//Ask for monthley income - 
+//Ask for monthley income - Done
 
-//Ask for rent amount  - 
+//Ask for rent amount  - Done
 
-// Ask for utilites - 
+// Ask for utilites - Done
 
-//Ask for groceries - 
+//Ask for groceries - Done
 
-//Ask for transportation - 
+//Ask for transportation - Done
 
 // Calculate savings as 10% of income (Variable) - 
+
+//Caclulate amount of spending money percent)
 
 //Calculate spending money  income - (rent + utilities + grocieries + transportations + savings) (Variable) - 
 
@@ -37,7 +39,7 @@ float transportation [50];
 char user(char type[100]){
     printf("How much do you spend on %s\n", type);
     scanf("%s", &type);
-    // Put a return statement here
+    return user;
 }
 char main(void){
     printf("Welcome to my program, it will tell you how much you spend, what percent you spend, and  more!\n");
