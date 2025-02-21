@@ -41,6 +41,9 @@ char user(char type[100]){
     scanf("%s", &type);
     return user;
 }
+//float user(float calculate[100]){               Fix this green
+  //  user (calculate = ("%f"/income*100));
+//}
 char main(void){
     printf("Welcome to my program, it will tell you how much you spend, what percent you spend, and  more!\n");
     printf("How much do you earn each month?\n");
