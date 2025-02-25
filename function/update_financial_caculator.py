@@ -4,11 +4,16 @@ def info(income, amount, type):
 
 
 print("Welcome to your personal financial calculator that will help you realize how you spend your money.")
-income = float(input("What is your monthley income?\n"))
-groceries = float(input("What is your monthley spending on grocieries?\n"))
-transportation = float(input("What is your monthley spending on transportation?\n"))
-utilities = float(input("What is your monthley spending on utilities?\n"))
-rent = float(input("What is your monthley spending on rent?\n"))
+
+def user(type):
+    type = user
+    input(f"How much money is used on {type} ")  
+income = user("income (How much do you earn?)")
+groceries = user("groceries") 
+transportation = user("transportation") # Have to set values to these four
+utilities = user("utilities")
+rent = user("rent")
+
 savings = income/10
 total_spending = rent+utilities+groceries+transportation+savings
 spending_money = income-rent-utilities-groceries-transportation-savings
