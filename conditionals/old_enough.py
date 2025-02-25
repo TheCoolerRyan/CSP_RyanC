@@ -11,5 +11,9 @@ else:
 if age >=16:
     print(f"Sense your {age} that means you can drive!\n")
 else:
-    print(f"words")
+    print(f"Sorry but sense your only {age} you can't drive yet.")
+if age >= 18:
+    print(f"Wow because your {age} you can vote.")
+else:
+    print(f"Sorry but because your only {age} years old, you can't vote yet.")
     
