@@ -1,37 +1,27 @@
-def info(income, amount, type):
-    pertype = amount/income*100
+# Ryan Crop, Financial calculator python
+print("This calculator will help you deal with Finances.\n")
+def info(income, amount,type):
+    pertype = (amount/income)*100
     print(f"You spend ${amount:.2f} on {type} and that is {pertype:.0f}% of your income.")
 
+def questions(inputs):
+    questions = float(input(f"What is your monthly {inputs}?\n"))
+   
+    return questions
 
-print("Welcome to your personal financial calculator that will help you realize how you spend your money.")
+income= float(input ("what is your monthly income?\n"))
+rent = float(input ("what is your monthly rent cost?\n"))
+utilities = float(input ("what is your monthly utilities cost?\n"))
+groceries = float(input ("what is your monthly grocery cost?\n"))
+transport = float(input ("what is your monthly transport cost?\n"))
+savings = float(income/10)
+expenses = float(rent+utilities+groceries+transport+savings)
+spending = float(income-expenses)
 
-def user(type):
-    type = user
-    float(input(f"How much money is used on {type}?"))
-user("income")
-user("groceries")
-user("transportation")
-user("utilities")
-user("rent")
-income = user("income (Type how much do you earn?)")
-groceries = user("groceries") 
-transportation = user("transportation") 
-utilities = user("utilities")
-rent = user("rent")
-user("income")
-user("groceries")
-user("transportation")
-user("utilities")
-user("rent")
-
-savings = income/10
-total_spending = rent+utilities+groceries+transportation+savings
-spending_money = income-rent-utilities-groceries-transportation-savings
-percent_spending_money = spending_money/income*100
 info(income, rent, "rent")
-info(income, savings, "savings")
-info(income, transportation, "transportation")
-info(income, groceries, "groceries")
 info(income, utilities, "utilities")
-info(income, total_spending, "total_spending")
-print(f"And you also currently have ${spending_money:.2f} of spending money which is {percent_spending_money}% of your income.\n")
+info(income, transport, "transport")
+info(income, savings, "savings")
+info(income, expenses, "expenses")
+info(income, spending, "spending (What you have left to use on whatever you want.)")
+info(income, groceries, "groceries")
