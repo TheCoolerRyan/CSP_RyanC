@@ -7,12 +7,22 @@ print("Welcome to your personal financial calculator that will help you realize 
 
 def user(type):
     type = user
-    input(f"How much money is used on {type} ")  
-income = user("income (How much do you earn?)")
+    float(input(f"How much money is used on {type}?"))
+user("income")
+user("groceries")
+user("transportation")
+user("utilities")
+user("rent")
+income = user("income (Type how much do you earn?)")
 groceries = user("groceries") 
-transportation = user("transportation") # Have to set values to these four
+transportation = user("transportation") 
 utilities = user("utilities")
 rent = user("rent")
+user("income")
+user("groceries")
+user("transportation")
+user("utilities")
+user("rent")
 
 savings = income/10
 total_spending = rent+utilities+groceries+transportation+savings
