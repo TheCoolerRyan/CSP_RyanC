@@ -12,8 +12,7 @@ elif age > 14 & age < 16:
     print(f"Wow being {age} means you can get a Learners permit and go to school but you cant drive or vote!\n")
 elif age < 15 & age >5:
     print(f"Sorry but sense your only {age} you can't get your learners permit drive or vote but you can go to school.\n")
-elif age >= 5 & age <15:
+elif age >4 & age <15:
     print(f"Wow, {age} is old enough that you can go to school, but you cant get your learners permit drive or vote!\n")
-elif age <5:
+else:
     print(f"Sorry but {age} is not old enough to go to school, get your learners permit, drive, or vote.\n")
-# Put in else statement
