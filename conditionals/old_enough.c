@@ -1,7 +1,7 @@
 //Ryan Crop, old enough c
 #include <stdio.h>
 #include <string.h>
-age;
+int age;
 int main(void){
 printf("What is your age?");
 scanf("%d", age);
@@ -21,6 +21,6 @@ if (age >= 18 ){
     printf("Wow, %d is old enough that you can go to school, but you cant get your learners permit drive or vote!\n", age);
 }else{
     printf("Sorry but %d is not old enough to go to school, get your learners permit, drive, or vote.\n", age);
-} // shouldbe good to turn in just have to test it.
+} 
     return 0;
 }
