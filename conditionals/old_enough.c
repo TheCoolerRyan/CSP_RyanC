@@ -3,8 +3,8 @@
 #include <string.h>
 int age;
 int main(void){
-printf("What is your age?");
-scanf("%d", age);
+printf("What is your age?\n");
+scanf("%d", &age);
 if (age >= 18 ){
     printf("Wow because your %d you can vote!\n", age);
 }else if (age <18 && age >16){
