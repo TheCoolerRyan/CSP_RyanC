@@ -6,7 +6,7 @@ local_time = time.localtime(current)
 print(local_time)
 hour = local_time.tm_hour
 
-if hour > 5 & hour< 11:
+if hour >= 5 & hour< 11:
     print("Hello and good mourning.")
 elif hour >= 11 & hour <= 16:
     print("Hello, you should really be outside because its a great afternoon")
