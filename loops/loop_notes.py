@@ -30,6 +30,7 @@ for family in familys:
     num += 1
 
 for num in range (1, 11, 3):
+    #             num, num, How much it goes up by 
     print(num)
 # 7 How do you make while loops in python?
 import random
