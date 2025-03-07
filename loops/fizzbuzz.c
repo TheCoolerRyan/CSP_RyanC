@@ -1,4 +1,4 @@
-//Ryan Crop, Template
+//Ryan Crop, FizzBuzz c
 #include <stdio.h>
 int(numbers) = 1;
 int main(void){
