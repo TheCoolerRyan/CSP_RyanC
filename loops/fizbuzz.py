@@ -10,5 +10,3 @@ while numbers >= 0 and numbers < 51:
     else:
         print(numbers)
     numbers += 1
-
-# Fix varible with equation
