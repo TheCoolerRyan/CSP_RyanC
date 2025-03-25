@@ -3,7 +3,7 @@ grid = [['1','2','3'],
 ['4','5','6'],
 ['7','8','9']]
 name = input("What is your name?\n")
-print(f"Hello {name}. This is a game of tic tac toe but with a small extra rule. If you attempt to put your X on a spot already occupied, then you will get your turn skipped as punishment.")
+print(f"Hello {name}. This is a game of tic tac toe but with a small extra rule. First the bot gets to go first because of how hard he works each day. Next is if you attempt to put your X on a spot already occupied, then you will get your turn skipped as punishment.")
 
 import random
 
@@ -34,7 +34,7 @@ def win(grid):
     elif grid[0][0] == "X" and grid[1][0]=="X" and grid[2][0]=="X":
         print("X wins")
         set (game_finsished = True)
-    elif grid[0][1] == "X" and grid[1][2]=="X" and grid[2][3]=="X":
+    elif grid[0][0] == "X" and grid[1][1]=="X" and grid[2][2]=="X":
         print("X wins")
         set (game_finsished = True)
     elif grid[0][2] == "X" and grid[1][2]=="X" and grid[2][2]=="X":
