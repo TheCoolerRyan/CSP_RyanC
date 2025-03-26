@@ -3,7 +3,7 @@ grid = [['1','2','3'],
 ['4','5','6'],
 ['7','8','9']]
 name = input("What is your name?\n")
-print(f"Hello {name}. This is a game of tic tac toe but with a small extra rule. First the bot gets to go first because of how hard he works each day. Next is if you attempt to put your X on a spot already occupied, then you will get your turn skipped as punishment.")
+print(f"Hello {name}. This is a game of tic tac toe but with a small extra rule.\n First the bot gets to go first because of how hard he works each day.\n Next is if you attempt to put your X on a spot already occupied, then you will get your turn skipped as punishment.")
 
 import random
 
@@ -44,6 +44,9 @@ def win(grid):
         print("X wins")
         set(game_finished = True)
     elif grid[0][2] == "X" and grid[1][1]=="X" and grid[2][0]=="X":
+        print("X wins")
+        set(game_finished = True)
+    elif grid[0][1] == "X" and grid[1][1]=="X" and grid[2][1]=="X":
         print("X wins")
         set(game_finished = True)
     elif grid[0][0] == "O" and grid[1][0]=="O" and grid[2][0]=="O":
@@ -93,6 +96,12 @@ while game_finished == False:
             grid[2][2] ="O"
         for list in grid:
             print(f" {list[0]} | {list[1]} | {list[2]}\n --+---+--")
+        win(grid) 
+        if game_finished == True:
+            break
+        else:
+            print("")
+    
 
     spot = int(input("pick a number for your spot 1-9 single digit please\n"))
 
@@ -119,8 +128,7 @@ while game_finished == False:
             grid[2][1] ="X"
         elif spot == 9:
             grid[2][2] ="X"
-    grid = grid
-    win(grid) # Make it so it checks who wins after O goes and after X goes.
+    win(grid) # Make it so it checks who wins after O goes and after X goes. Also coppy and paste X straight down winning code and change it to O so the O code will work.
     if game_finished == True:
         break
     else:
