@@ -109,10 +109,13 @@ while game_finished == False:
         win(grid, game_finished) 
         if game_finished is True:
             break
+        else:
+            print("")
             
     
 #Johanns part
-    spot = int(input("pick a number for your spot 1-9 single digit please\n"))
+    if game_finished == False:
+        spot = int(input("pick a number for your spot 1-9 single digit please. (If games already over then it's because you lost and the bot feels bad for you so it's giving you a freebie.)\n"))
 
     if spot in taken_list:
         print("That spot is taken or not on the list, because you didn't listen to the rules your turn is skipped >:) !")
