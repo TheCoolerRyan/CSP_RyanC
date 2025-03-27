@@ -5,7 +5,7 @@ grid = [['1','2','3'],
 ['4','5','6'],
 ['7','8','9']]
 name = input("What is your name?\n") #These two lines where part of Johanns 
-print(f"Hello {name}. This is a game of tic tac toe but with a small bit of extra rules.\n First the bot gets to go first because of how hard he works each day.\n Next is if you attempt to put your X on a spot already occupied, then you will get your turn skipped as punishment.\n Finally if you win you will get a three chant win cheer.\n")
+print(f"Hello {name}. This is a game of tic tac toe but with a small bit of extra rules.\n First the bot gets to go first because of how hard he works each day.\n Next is if you attempt to put your X on a spot already occupied, then you will get your turn skipped as punishment.\n Finally if you win you will get a two chant win cheer.\n")
 
 #First part of Ryan Crops
 import random
@@ -138,7 +138,6 @@ while game_finished == False:
         elif spot == 9:
             grid[2][2] ="X"
 #Ryan Rs part
-    win(grid, game_finished) 
     win(grid, game_finished) 
     if game_finished is True:
         break
