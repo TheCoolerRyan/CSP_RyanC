@@ -1,10 +1,13 @@
-# Ryan Crop, Final project
+# Final project
+
+#Santiagos first part, other parts are with the grids
 grid = [['1','2','3'],
 ['4','5','6'],
 ['7','8','9']]
 name = input("What is your name?\n")
 print(f"Hello {name}. This is a game of tic tac toe but with a small extra rule.\n First the bot gets to go first because of how hard he works each day.\n Next is if you attempt to put your X on a spot already occupied, then you will get your turn skipped as punishment.")
 
+#Ryan R's part
 import random
 
 game_finished = False
@@ -64,10 +67,15 @@ def win(grid):
     elif grid[0][2] == "O" and grid[1][1]=="O" and grid[2][0]=="O":
         print("O wins")
         set(game_finished = True)
+    elif grid[0][1] == "O" and grid[1][1]=="O" and grid[2][1]=="O":
+        print("O wins")
+        set(game_finished = True)
     elif all(spot in ["X", "O"] for row in grid for spot in row):
         print("It's a tie.")
         set(game_finished = True)
     return grid
+
+#Ryan Crops part
 while game_finished == False:
     random_integer = random.randint(1, 9)
 
@@ -102,7 +110,7 @@ while game_finished == False:
         else:
             print("")
     
-
+#Johanns part
     spot = int(input("pick a number for your spot 1-9 single digit please\n"))
 
     if spot in taken_list:
@@ -128,10 +136,8 @@ while game_finished == False:
             grid[2][1] ="X"
         elif spot == 9:
             grid[2][2] ="X"
-    win(grid) # Make it so it checks who wins after O goes and after X goes. Also coppy and paste X straight down winning code and change it to O so the O code will work.
+    win(grid) 
     if game_finished == True:
         break
     else:
         print("")
-    
-# Fix why O cant win
