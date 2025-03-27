@@ -1,84 +1,86 @@
-# Final project
+# Ryan Crop, Final project
 
 #Santiagos first part, other parts are with the grids
 grid = [['1','2','3'],
 ['4','5','6'],
 ['7','8','9']]
-name = input("What is your name?\n")
-print(f"Hello {name}. This is a game of tic tac toe but with a small extra rule.\n First the bot gets to go first because of how hard he works each day.\n Next is if you attempt to put your X on a spot already occupied, then you will get your turn skipped as punishment.")
+name = input("What is your name?\n") #These two lines where part of Johanns 
+print(f"Hello {name}. This is a game of tic tac toe but with a small bit of extra rules.\n First the bot gets to go first because of how hard he works each day.\n Next is if you attempt to put your X on a spot already occupied, then you will get your turn skipped as punishment.\n Finally if you win you will get a three chant win cheer.\n")
 
-#Ryan R's part
+#First part of Ryan Crops
 import random
 
 game_finished = False
 
 repeat = 1
 taken_list = []
-def win(grid):
+#Ryan R's part
+def win(grid, game_finished):
 
     if   grid[0][0] == "X" and grid[0][1]=="X" and grid[0][2]=="X":
          print("X wins")
-         set(game_finished = True)
+         game_finished = True
+        
     elif grid[1][0] == "X" and grid[1][1]=="X" and grid[1][2]=="X":
         print("X wins")
-        set(game_finished = True)
+        game_finished = True
     elif grid[2][0] == "X" and grid[2][1]=="X" and grid[2][2]=="X":
         print("X wins")
-        set(game_finished = True)
+        game_finished = True
     elif grid[0][0] == "O" and grid[0][1]=="O" and grid[0][2]=="O":
         print("O wins")
-        set(game_finished = True)
+        game_finished = True
     elif grid[1][0] == "O" and grid[1][1]=="O" and grid[1][2]=="O":
         print("O wins")
-        set(game_finished = True)
+        game_finished = True
     elif grid[2][0] == "O" and grid[2][1]=="O" and grid[2][2]=="O":
         print("O wins")
-        set(game_finished = True)
+        game_finished = True
     elif grid[0][0] == "X" and grid[1][0]=="X" and grid[2][0]=="X":
         print("X wins")
-        set(game_finished = True)
+        game_finished = True
     elif grid[0][0] == "X" and grid[1][1]=="X" and grid[2][2]=="X":
         print("X wins")
-        set(game_finished = True)
+        game_finished = True
     elif grid[0][2] == "X" and grid[1][2]=="X" and grid[2][2]=="X":
         print("X wins")
-        set(game_finished = True)
+        game_finished = True
     elif grid[0][0] == "X" and grid[1][1]=="X" and grid[2][2]=="X":
         print("X wins")
-        set(game_finished = True)
+        game_finished = True
     elif grid[0][2] == "X" and grid[1][1]=="X" and grid[2][0]=="X":
         print("X wins")
-        set(game_finished = True)
+        game_finished = True
     elif grid[0][1] == "X" and grid[1][1]=="X" and grid[2][1]=="X":
         print("X wins")
-        set(game_finished = True)
+        game_finished = True
     elif grid[0][0] == "O" and grid[1][0]=="O" and grid[2][0]=="O":
         print("O wins")
-        set(game_finished = True)
+        game_finished = True
     elif grid[0][0] == "O" and grid[1][1]=="O" and grid[2][2]=="O":
         print("O wins")
-        set(game_finished = True)
+        game_finished = True
     elif grid[0][2] == "O" and grid[1][2]=="O" and grid[2][2]=="O":
         print("O wins")
-        set(game_finished = True)
+        game_finished = True
     elif grid[0][0] == "O" and grid[1][1]=="O" and grid[2][2]=="O":
         print("O wins")
-        set(game_finished = True)
+        game_finished = True
     elif grid[0][2] == "O" and grid[1][1]=="O" and grid[2][0]=="O":
         print("O wins")
-        set(game_finished = True)
+        game_finished = True
     elif grid[0][1] == "O" and grid[1][1]=="O" and grid[2][1]=="O":
         print("O wins")
-        set(game_finished = True)
+        game_finished = True
     elif all(spot in ["X", "O"] for row in grid for spot in row):
         print("It's a tie.")
-        set(game_finished = True)
-    return grid
+        game_finished = True
+    return game_finished
 
 #Ryan Crops part
 while game_finished == False:
     random_integer = random.randint(1, 9)
-
+    game_finished = win(grid, game_finished)  
     
     if random_integer in taken_list:
         continue
@@ -104,17 +106,16 @@ while game_finished == False:
             grid[2][2] ="O"
         for list in grid:
             print(f" {list[0]} | {list[1]} | {list[2]}\n --+---+--")
-        win(grid) 
-        if game_finished == True:
+        win(grid, game_finished) 
+        if game_finished is True:
             break
-        else:
-            print("")
+            
     
 #Johanns part
     spot = int(input("pick a number for your spot 1-9 single digit please\n"))
 
     if spot in taken_list:
-        print("That spot is taken, because you didn't listen to the rules your turn is skipped >:) !")
+        print("That spot is taken or not on the list, because you didn't listen to the rules your turn is skipped >:) !")
         continue
     else: 
         taken_list.append(spot)
@@ -136,8 +137,8 @@ while game_finished == False:
             grid[2][1] ="X"
         elif spot == 9:
             grid[2][2] ="X"
-    win(grid) 
-    if game_finished == True:
+#Ryan Rs part
+    win(grid, game_finished) 
+    win(grid, game_finished) 
+    if game_finished is True:
         break
-    else:
-        print("")
