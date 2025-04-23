@@ -1,8 +1,9 @@
 let images = ["https://www.earthdiver.com/cdn-cgi/image/width=4000,quality=75,format=auto/https://assets.earthdiver.com/media/media-2727684.jp?w=5246&h=2193&tick=1667491652923","https://images.squarespace-cdn.com/content/v1/63c60d44c98af85334537583/644359f9-c213-4d77-bdb0-b78b7f8424f3/Mount_Timpanogos_at_sunset.jpg","https://www.nicodebarmore.com/wp-content/uploads/2014/08/wildflower-basin-1024x1020.jpg"]
 document = notes.html
 function hello(){
+    let name = window.prompt("What is your name?","Koro Sensei")
     document.getElementById("title").
-    innerHTML = "Hello World!"
+    innerHTML = "Hello " + name + "!"
 
 }
 count = 0
@@ -22,6 +23,12 @@ function normal(){
     document.getElementById("btn").style.backgroundColor="gray"
     document.getElementById("btn").style.color = "black"
 }
+function push(){
+    document.getElementById("btn").style.backgroundColor="red"
+}
 function show(){
     document.getElementById("hidden").style.display = "block"
+}
+function pop(){
+    window.alert("For real. Don't click this!")
 }
